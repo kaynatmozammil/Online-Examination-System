@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #005f73; /* Dark teal */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a9396;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.site-title {
+  margin-left: 15px;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-title a:hover {
+  color: #94d2bd;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #94d2bd;
+  color: #005f73;
+}
+
+/* About Us Page Styles */
+.about-us-section {
+  padding: 40px;
+  background-color: #e9f5f5; /* Light teal background */
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  color: #005f73; /* Dark teal */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.mission,
+.vision {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.mission h3,
+.vision h3 {
+  color: #005f73; /* Dark teal */
+}
+
+.meet-the-team {
+  text-align: center;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.team-member-info {
+  text-align: left;
+}
+
+.team-member-info h4 {
+  color: #005f73; /* Dark teal */
+  margin: 0;
+}
+
+.team-member-info p {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #005f73; /* Dark teal */
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}

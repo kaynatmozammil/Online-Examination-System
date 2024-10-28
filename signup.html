@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Online Examination System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.jpg" alt="OES Logo" />
+            </a>
+          </div>
+          <div class="site-title">
+            <a href="index.html">Online Examination System</a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="register-section" action="http://localhost/OES/signup.php" method="POST">
+      <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="http://localhost/OES/signup.php" method="POST">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your full name"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Create a password"
+          />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            placeholder="Confirm your password"
+          />
+
+          <label for="user-type">I am a:</label>
+          <select id="user-type" name="user-type" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+
+          <button type="submit">Register</button>
+        </form>
+        <p class="login-link">
+          Already have an account? <a href="signin.html">Login</a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>

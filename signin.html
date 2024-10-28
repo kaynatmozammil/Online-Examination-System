@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Online Examination System</title>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.jpg" alt="OES Logo" />
+            </a>
+          </div>
+          <div class="site-title">
+            <a href="index.html">Online Examination System</a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form action="http://localhost/OES/signin.php"  method="post">
+      <section class="signin-section">
+        <div class="form-container">
+          <h2>Sign In</h2>
+          <form action="signin.php" method="POST">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Enter your password"
+            />
+
+            <button type="submit" name="signin">Sign In</button>
+          </form>
+          <p class="signup-link">
+            Don't have an account? <a href="signup.html">Register</a>
+          </p>
+          <p class="forgot-password">
+            <a href="forgot-password.html">Forgot your password?</a>
+          </p>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
